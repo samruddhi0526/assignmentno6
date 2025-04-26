@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container mt-5">
+    <h1 class="text-center">Image Gallery</h1>
+    <div class="text-center mb-4">
+         <button class="btn btn-primary filter-button" data-filter="all">All</button>
+        <button class="btn btn-secondary filter-button" data-filter="Munnar-Hill-Station">Munnar Hill Station</button>
+        <button class="btn btn-secondary filter-button" data-filter="Western-Ghat">Western Ghat</button>
+        <button class="btn btn-secondary filter-button" data-filter="Tiger">Tiger</button>
+        <button class="btn btn-secondary filter-button" data-filter="Elephant">Elephant</button>
+        <button class="btn btn-secondary filter-button" data-filter="Red-Fort">Red Fort</button>
+        <button class="btn btn-secondary filter-button" data-filter="Taj-Mahal">Taj Mahal</button> <!-- Corrected class name -->
+    </div>
+
+    <div class="row gallery">
+        <div class="col-md-4 filter Munnar-Hill-Station">
+            <div class="gallery-item">
+                <img src="https://www.adotrip.com/public/images/city/master_images/5e4103a2eeefa-Munnar_Package_Tour.jpg" class="img-fluid" alt="Munnar-Hill-Station">
+            </div> 
+        </div>
+        <div class="col-md-4 filter Tiger">
+            <div class="gallery-item">
+                <img src="https://th.bing.com/th/id/OIP.auqaXe465pxUKNMwgGrYngHaEo?rs=1&pid=ImgDetMain" class="img-fluid" alt="Tiger">
+            </div>
+        </div>
+        <div class="col-md-4 filter Red-Fort">
+            <div class="gallery-item">
+                <img src="https://static.toiimg.com/photo/53438383/.jpg" class="img-fluid" alt="Red-Fort">
+            </div>
+        </div>
+        <div class="col-md-4 filter Western-Ghat">
+            <div class="gallery-item">
+                <img src="https://th.bing.com/th/id/OIP.VcIDrAB4zts4ZX-NMS-PfgHaFj?rs=1&pid=ImgDetMain" class="img-fluid" alt="Western-Ghat">
+            </div>
+        </div>
+        <div class="col-md-4 filter Elephant">
+            <div class="gallery-item">
+                <img src="https://th.bing.com/th/id/R.87934da7c1f28a409294bc494d1d411b?rik=uRmODhe8ocIaRA&riu=http%3a%2f%2f1.bp.blogspot.com%2f-WLtOEjAK3RY%2fUAAwfdpEIjI%2fAAAAAAAAMzs%2fcEwvMngLSbw%2fs1600%2fElephant10.jpg&ehk=r5ViNBnzUCrzOgGQYbv%2bExTphuOlRkS8ABO%2fPh2rbuE%3d&risl=&pid=ImgRaw&r=0" class="img-fluid" alt="Elephant">
+            </div>
+        </div>
+        
+        <div class="col-md-4 filter Taj-Mahal">
+            <div class="gallery-item">
+                <img src="https://lp-cms-production.imgix.net/news/2019/06/taj-mahal.jpg?auto=format&fit=crop&q=40&sharp=10&vib=20&ixlib=react-8.6.4" class="img-fluid" alt="Taj-Mahal">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

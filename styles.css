@@ -1,0 +1,20 @@
+/* styles.css */
+.gallery-item {
+    margin-bottom: 30px; /* Space below each image */
+    margin-right: 15px;  /* Space to the right of each image */
+}
+
+.gallery-item img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Clearfix for the last item in a row */
+.row {
+    margin-right: -15px; /* Adjust for the right margin */
+}
